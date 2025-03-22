@@ -8,7 +8,7 @@ For example, you can use the following commands in PyMOL to select the regions a
 ```
 select oct1, chain A+B+C+D+E+F+G+H
 select dna1, byres oct1 around 4 and chain K+S
-iterate oct1 and n. P, dna1
+iterate dna1 and n. P, print(chain, resn, resi)
 ```
 3. Define the regions in a plain text file using the following format:
 ```
